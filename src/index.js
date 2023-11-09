@@ -99,7 +99,6 @@ function cleanAdivinarNumero() {
     nosIntenados = [];
 
     var adivinanzaUsuario = document.getElementById("adivinanza")
-
     adivinanzaUsuario.value = ""
 }
 
