@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  width: 373px;
+}
+
+body {
+  background: orange;
+}
+
+/* splash */
+#splash {
+  height: 808px;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-principal {
+  height: 808px;
+  text-align: center;
+}
+#menu-principal .wrapper-menu-principal {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+  width: 280px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#menu-principal .wrapper-menu-principal .h1 {
+  text-align: center;
+}
+#menu-principal .wrapper-menu-principal .button-menu {
+  width: 70%;
+  margin-top: 10px;
+  height: 50px;
+}
+
+#adivinar-numero {
+  height: 808px;
+}
+
+#pixel-art {
+  height: 808px;
+}
+
+#memoria {
+  height: 808px;
+}
+
+#ahorcado {
+  height: 808px;
+}
+
+/* CSS */
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

@@ -1,0 +1,78 @@
+$max-width: 373px;
+$max-heigth: 808px;
+$background: orange;
+$wrapper-bg-color: whitesmoke;
+$wrapper-box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+$wrapper-max-width: 280px;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    width: $max-width;
+    // border: 1px solid black;
+}
+
+body {
+    background: $background;
+}
+
+/* splash */
+#splash {
+    height: $max-heigth;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-principal {
+    height: $max-heigth;
+    text-align: center;
+
+    .wrapper-menu-principal {
+        box-sizing: border-box;
+        background-color: $wrapper-bg-color;
+        position: relative;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        border-radius: 10px;
+        box-shadow: $wrapper-box-shadow;
+        width: $wrapper-max-width;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .h1{
+            text-align: center;
+        }
+
+        .button-menu {
+            width: 70%;
+            margin-top: 10px;
+            height: 50px;
+        }
+    }
+}
+
+#adivinar-numero {
+    height: $max-heigth;
+}
+
+#pixel-art {
+    height: $max-heigth;
+}
+
+#memoria {
+    height: $max-heigth;
+}
+
+#ahorcado {
+    height: $max-heigth;
+}
+
+
+/* CSS */
+
+.hidden {
+    display: none;
+}
