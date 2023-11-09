@@ -5,4 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+.cache
+.cache/
+/.cache
 
