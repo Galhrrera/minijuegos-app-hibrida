@@ -5,7 +5,7 @@ const menuPrincipal = document.getElementById("menu-principal");
 const adivinarNumero = document.getElementById("adivinar-numero");
 const pixelArt = document.getElementById("pixel-art");
 const memoria = document.getElementById("memoria");
-const ahorcado = document.getElementById("ahorcado");
+const clicker = document.getElementById("clicker");
 
 const menuToAdivinarNumeroBtn = document.getElementById("adivinar-numero-btn");
 const adivinarBtn = document.getElementById("adivinar-btn");
@@ -28,7 +28,7 @@ function hideAllSections() {
     adivinarNumero.classList.add("hidden");
     pixelArt.classList.add("hidden");
     memoria.classList.add("hidden");
-    ahorcado.classList.add("hidden");
+    clicker.classList.add("hidden");
 }
 
 //Menú principal to adivina el número
