@@ -9,6 +9,7 @@ const ahorcado = document.getElementById("ahorcado");
 
 const menuToAdivinarNumeroBtn = document.getElementById("adivinar-numero-btn");
 const adivinarBtn = document.getElementById("adivinar-btn");
+const adivinarNumeroToMenu = document.getElementById("adivinanzaToMenu-btn");
 
 window.onload = function () {
     hideAllSections();
@@ -38,6 +39,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // loadDreams();
     });
 });
+
+//Adivina el número to Menú principal
+document.addEventListener('DOMContentLoaded', function () {
+    adivinarNumeroToMenu.addEventListener('click', function () {
+        adivinarNumero.classList.add("hidden");
+        cleanAdivinarNumero();
+        menuPrincipal.classList.remove("hidden");
+    })
+})
 
 /* ADIVINANZA */
 var adivinanzaMsg1 = document.getElementById("adivinar-numero-mensaje1");
@@ -69,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 adivinanzaMsg2.textContent = "N° de intentos: " + noDeIntentos;
                 adivinanzaMsg3.textContent = "Núemros intentados: " + nosIntenados;
             }
-            else if (adivinanzaUsuario == adivinanzaRespuesta){
+            else if (adivinanzaUsuario == adivinanzaRespuesta) {
                 adivinanzaMsg1.textContent = "¡HAS GANADO!";
                 adivinanzaMsg2.textContent = "El número era: " + adivinanzaRespuesta;
                 adivinanzaMsg3.textContent = "Número de intentos: " + noDeIntentos;
@@ -78,6 +88,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 })
+
+function cleanAdivinarNumero() {
+    adivinanzaMsg1.textContent = "N° de intentos: 0";
+    adivinanzaMsg2.textContent = "Números intentados: 0"
+    adivinanzaMsg3.textContent = "";
+
+    adivinanzaRespuesta = Math.floor(Math.random() * 100) + 1;
+    noDeIntentos = 0;
+    nosIntenados = [];
+
+    var adivinanzaUsuario = document.getElementById("adivinanza")
+
+    adivinanzaUsuario.value = ""
+}
 
 // function playAdivinanza() {
 
