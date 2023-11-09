@@ -4,6 +4,7 @@ $background: orange;
 $wrapper-bg-color: whitesmoke;
 $wrapper-box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
 $wrapper-max-width: 280px;
+$btn-background-color: #e11d1d;
 
 * {
     margin: 0;
@@ -50,12 +51,63 @@ body {
             width: 70%;
             margin-top: 10px;
             height: 50px;
+            background-color: white;
         }
     }
 }
 
 #adivinar-numero {
     height: $max-heigth;
+
+    .adivinar-numero-container-ppl {
+        position: relative;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        background-color: $wrapper-bg-color;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        // height: 500px;
+
+        h4 {
+            font-size: 20px;
+            width: 340px;
+            font-weight: 600;
+        }
+        #adivinanza {
+            text-align: center;
+            width: 90px;
+            font-weight: 600;
+            padding: 20px 0;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border: 2px solid black;
+            font-size: 18px;
+        }
+
+        #adivinar-btn {
+            width: 160px;
+            padding: 15px 0;
+            border-radius: 10px;
+            border: none;
+            background-color: $btn-background-color;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            outline: none;
+        }
+
+        .adivinanza-p {
+            font-weight: 400;
+            width: 340px;
+        }
+    }
 }
 
 #pixel-art {
