@@ -3,8 +3,8 @@ import './styles/main.scss';
 const splash = document.getElementById("splash");
 const menuPrincipal = document.getElementById("menu-principal");
 const adivinarNumero = document.getElementById("adivinar-numero");
-const pixelArt = document.getElementById("pixel-art");
-const memoria = document.getElementById("memoria");
+// const pixelArt = document.getElementById("pixel-art");
+// const memoria = document.getElementById("memoria");
 const clicker = document.getElementById("clicker");
 
 const menuToAdivinarNumeroBtn = document.getElementById("adivinar-numero-btn");
@@ -12,6 +12,8 @@ const adivinarBtn = document.getElementById("adivinar-btn");
 const adivinarNumeroToMenu = document.getElementById("adivinanzaToMenu-btn");
 const menuToColonizaElPlanetaBtn = document.getElementById("coloniza-el-planeta-btn");
 const clickerToMenuBtn = document.getElementById("clickerToMenu-btn");
+
+
 
 window.onload = function () {
     hideAllSections();
@@ -28,8 +30,8 @@ function hideSplahs() {
 function hideAllSections() {
     menuPrincipal.classList.add("hidden");
     adivinarNumero.classList.add("hidden");
-    pixelArt.classList.add("hidden");
-    memoria.classList.add("hidden");
+    // pixelArt.classList.add("hidden");
+    // memoria.classList.add("hidden");
     clicker.classList.add("hidden");
 }
 
@@ -206,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function startAutoScore() {
-    if(score >= 100000){
+    if(score <= 100001){
         setInterval(() => {
             score += soldados;
             score += herramientas * 10;
@@ -214,14 +216,17 @@ function startAutoScore() {
             updateDisplay();
         }, 1000);
     }
+    else {
+        resetGame();
+    }
 }
 
 
 function resetGame() {
     score = 0;
-    soldados = 1;
-    herramientas = 1;
-    vehiculos = 1;
+    soldados = 0;
+    herramientas = 0;
+    vehiculos = 0;
     updateDisplay();
 }
 
