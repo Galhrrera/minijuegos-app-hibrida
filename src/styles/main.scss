@@ -43,7 +43,7 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
 
-        .h1{
+        .h1 {
             text-align: center;
         }
 
@@ -79,6 +79,7 @@ body {
             width: 340px;
             font-weight: 600;
         }
+
         #adivinanza {
             text-align: center;
             width: 90px;
@@ -126,8 +127,81 @@ body {
     height: $max-heigth;
 }
 
-#ahorcado {
+#clicker {
     height: $max-heigth;
+    text-align: center;
+
+    .coloniza-el-planeta-container-ppl {
+        position: relative;
+        width: 90%;
+        height: 550px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        background-color: $wrapper-bg-color;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+
+        .colonizacion-titulo {
+            margin-left: -15px;
+        }
+
+        #healthBar {
+            height: 20px;
+            
+            width: 100%; /* La anchura se actualizará dinámicamente */
+            position: relative;
+            margin-left: 0px;
+            bottom: 0;
+          }
+
+        #planeta {
+            /* Establecer las dimensiones y el espaciado */
+            width: 200px;
+            height: 200px;
+            margin: 2em auto;
+            /* Ajustar la apariencia y darle un fondo con un gradiente lineal */
+            border-radius: 50%;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5), inset 10px 10px 20px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.2);
+        }
+
+        .coloniza-el-planeta-p-container {
+            
+            width: 100%;
+            
+            p{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: -12px;
+            }
+        }
+
+        .coloniza-game-btn {
+            width: 160px;
+            padding: 15px 0;
+            border-radius: 10px;
+            border: none;
+            background-color: $btn-background-color;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            outline: none;
+            margin-top: 10px;
+        }
+    }
+
+    #clickerToMenu-btn {
+        margin-top: 10px;
+        width: 70%;
+        transform: translate(0, 150px);
+        height: 50px;
+        background-color: white;
+    }
 }
 
 

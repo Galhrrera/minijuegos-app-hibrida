@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minijuegos</title>
 </head>
+
 <body>
     <section id="splash">
         <h1>MINIJUEGOS</h1>
@@ -14,7 +16,7 @@
             <button class="button-menu" id="adivinar-numero-btn">Adivinar el número</button>
             <button class="button-menu">Pixel Art</button>
             <button class="button-menu">Juego de memoria</button>
-            <button class="button-menu">Ahorcado</button>
+            <button class="button-menu" id="coloniza-el-planeta-btn">Coloniza el planeta</button>
         </div>
     </section>
     <section id="adivinar-numero">
@@ -33,9 +35,6 @@
         </div>
 
         <button id="adivinanzaToMenu-btn">Menú principal</button>
-        <section id="clicker">
-            <h1>JUEGO</h1>
-        </section>
     </section>
     <section id="pixel-art">
         <h1>JUEGO</h1>
@@ -43,7 +42,25 @@
     <section id="memoria">
         <h1>JUEGO</h1>
     </section>
+    <section id="clicker">
+        <div class="coloniza-el-planeta-container-ppl">
+            <h4 class="colonizacion-titulo">Toca el planeta para colonizarlo</h4>
+            <button id="planeta"></button>
+            <div class="coloniza-el-planeta-p-container">
+                <p id="healthBar">Puntos para colonización: 100000</p>
+                <p id="score">Puntos: 0</p>
+                <p id="noSoldados">N° soldados: 0</p>
+                <p id="noHerramientas">N° herramientas: 0</span></p>
+                <p id="noVehiculos">N° vehículos: 0</span></p>
+            </div>
+            <button id="soldierButton" class="coloniza-game-btn">Soldado 10 (+1)</button>
+            <button id="toolsButton" class="coloniza-game-btn">Herramienta 100 (+10)</button>
+            <button id="vehicleButton" class="coloniza-game-btn">Vehículo 1000 (+100)</button>
+        </div>
+        <button id="clickerToMenu-btn">Menú principal</button>
+    </section>
     <script src="./index.js"></script>
     </script>
 </body>
+
 </html>
