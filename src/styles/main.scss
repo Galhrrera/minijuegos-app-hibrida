@@ -24,6 +24,14 @@ body {
     height: $max-heigth;
     justify-content: center;
     align-items: center;
+    background-color: black;
+
+    #logo {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 10px;
+        transform: translate(13%, 80%);
+    }
 }
 
 #menu-principal {
