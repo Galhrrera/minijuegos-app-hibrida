@@ -1,0 +1,8 @@
+{
+  "appId": "com.galhrrera.minimax",
+  "appName": "MiniMax",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
